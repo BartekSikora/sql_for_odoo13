@@ -1,3 +1,6 @@
+-- Wykonanie zapytania pobierze plik CSV z listą kontaktów oraz ich metadane i dane teleadresowe.
+-- Do otwarcia pliku sugerujemy OpenOffice Calc z zestawem znaków UTF-8. W Excel przy domyślnych ustawieniach mogą wystąpić problemy z formatowaniem liczb i polskich znaków.
+
 SELECT
 res_partner.id AS "ID",
 
