@@ -13,5 +13,5 @@ FROM stock_move
 LEFT JOIN stock_picking ON stock_move.picking_id = stock_picking.id 
 LEFT JOIN stock_valuation_layer ON stock_valuation_layer.product_id = stock_move.product_id 
 
--- W wierszu poniżej należy wprowadzić numerację przesunięć oraz zakres dat ich wykonania
-WHERE stock_picking.name LIKE 'MG/WZ/%' AND stock_picking.date_done BETWEEN '2021-08-01 00:00:00' AND '2021-08-31 23:59:59'
+-- W wierszu poniżej należy wprowadzić numerację przesunięć oraz zakres dat ich wykonania.
+WHERE stock_picking.name LIKE 'MG/WZ/%' AND stock_picking.date_done BETWEEN '2021-01-01 00:00:00' AND '2021-01-31 23:59:59'
