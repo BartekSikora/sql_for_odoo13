@@ -1,0 +1,22 @@
+SELECT
+purchase_order.name AS "Numer zamówienia zakupu",
+purchase_order.partner_ref AS "Numer dostawcy",
+purchase_order.date_order AS "Data zamówienia",
+purchase_order.date_approve AS "Data potwierdzenia",
+moves.picking_name AS "Numer przesunięcia",
+moves.picking_scheduled_date AS "Planowana data dostawy",
+moves.picking_date_done AS "Data przesunięcia"
+FROM 
+(
+SELECT
+procurement_group.id AS "procurement_group_id",
+stock_picking.name AS "picking_name",
+stock_picking.scheduled_date AS "picking_scheduled_date",
+stock_picking.date_done AS "picking_date_done"
+FROM procurement_group
+
+LEFT JOIN stock_picking ON stock_picking.group_id = procurement_group.id) AS "moves"
+
+LEFT JOIN purchase_order ON purchase_order.group_id = moves.procurement_group_id
+
+WHERE purchase_order.state IN ('purchase', 'done')
