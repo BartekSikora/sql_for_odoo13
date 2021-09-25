@@ -1,4 +1,4 @@
--- This example showcases how to export translations instead of their base values. 
+-- This example showcases how to export translations instead of base values. 
 -- The query will return list of base names of countries (in english) as well as their polish equivalents.
 -- Use OpenOffice Calc with UTF-8 encoding to avoid formatting problems.
 
