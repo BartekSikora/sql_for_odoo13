@@ -2,4 +2,4 @@ The aim of this project is to provide an easy to use list of SQL queries enchanc
 
 Queries are executed using SQL Export module by Odoo S.A.
 
-Most comments are in polish due to the language of the expected users.
+Most comments and names of columns are in polish due to the language of the expected users.
