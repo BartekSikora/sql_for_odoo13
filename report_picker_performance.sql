@@ -1,4 +1,4 @@
--- Executing the query will return a CSV file with list of employees and a number of processed pick lists between the specified dates.
+-- Executing the query will return a CSV file with a list of employees and a number of processed pick lists between the specified dates.
 -- Report is not perfect due to model limitations. It would be best to show the number of retrieved products instead of pick lists.
 -- This query uses custom model not available in standard inventory app. Executing without the right plugin will result in "relation does not exist" error.
 
