@@ -1,5 +1,5 @@
 -- This example shows how to connect product.product with its product.template. 
--- The query will return list of products with their codes (SKU).
+-- The query will return list of product names and their default codes (SKU).
 -- Use OpenOffice Calc with UTF-8 encoding to avoid formatting problems.
 
 SELECT 
